@@ -3,7 +3,7 @@
 import Image from "next/image"
 
 export type BlackBgInfoCardsProps={
-    number:number,
+    number:string,
     heading:string,
     description:string,
 }
