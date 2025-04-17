@@ -4,7 +4,7 @@ import Image from "next/image"
 
 export const HeroSection = () => {
     return(
-        <div className=" w-full h-[70%] flex justify-between">
+        <div className=" w-full h-[70%] flex justify-between mt-6">
         <div className="w-[40%] h-full flex flex-col px-28 pt-14">
           <h1 className="text-[#005ab1] font-bold text-5xl">
             Next-Gen 
