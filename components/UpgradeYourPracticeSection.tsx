@@ -14,14 +14,14 @@ export const UpgradeYourPracticeSection=()=>{
                 <h2 className="text-[#005ab1] text-semibold text-4xl">Upgrade Your Practice</h2>
                 <p className="font-semibold mt-2">Everything in one platform. From digital therapy tools to automated scheduling — it just works, together.</p>
                 <Image src={"/boy-girl-table.svg"} width={500} height={500} alt="boy-girl-table" className="z-20 mt-12"/>
-                <div className="z-30 absolute left-[18%] top-[27%] backdrop-blur-sm">
+                <div className="z-30 absolute left-[18%] top-[27%] ">
                     {InfoCardsData.slice(0,4).map((items,index)=>(<InfoCards key={index} {...items}/>))}
                     <Image src={"/Frame 1000014222.svg"} width={100} height={100} alt="practo" className="absolute top-0 -left-[30%]"/>
                     <Image src={"/Frame 1000014226.svg"} width={200} height={200} alt="practo" className="absolute top-[28%] -left-[60%]"/>
                     <Image src={"/Frame 1000014223.svg"} width={150} height={150} alt="practo" className="absolute top-[55%] -left-[40%]"/>
                     <Image src={"/Frame 1000014230.svg"} width={150} height={150} alt="practo" className="absolute top-[90%] left-[ 20%]"/>
                 </div>
-                <div className="z-30 absolute left-[65%] top-[25%] backdrop-blur    ">
+                <div className="z-30 absolute left-[65%] top-[25%]">
                     {InfoCardsData.slice(4).map((items,index)=>(<InfoCards key={index} {...items}/>))}
                     <Image src={"/Frame 1000014221.svg"} width={100} height={100} alt="practo" className="absolute -top-[5%] left-[80%]"/>
                     <Image src={"/Frame 1000014228.svg"} width={200} height={200} alt="practo" className="absolute top-[20%]  left-[88%]"/>
