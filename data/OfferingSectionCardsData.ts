@@ -7,16 +7,16 @@ export const OfferingSectionCardsData:OfferingSectionCardsProps[]=[
         imgh:200,
         heading:"For Doctors",
         description:"Everything you need—vision therapy, patient tracking, appointment management—all in one seamless, doctor-focused platform",
-        styling:"ml-36 transform translate-y-2/3  ",
+        styling:"ml-36 transform translate-y-6",
 
     },
     {
         image:"/patient.svg",
-        imgw:120,
-        imgh:120,
+        imgw:100,
+        imgh:100,
         heading:"For Patients",
         description:"Everything you need—vision therapy, patient tracking, appointment management—all in one seamless, doctor-focused platform",
-        styling:"ml-56 4 transform translate-y-1/4",
+        styling:"ml-56 4 transform translate-y-4 ",
 
     }
 ]

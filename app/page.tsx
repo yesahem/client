@@ -107,7 +107,7 @@ export default function Home() {
         </div>
       </section>
       <section className="w-screen h-[150vh] flex justify-center mt-12">
-        <div className="flex bg-black h-[50%] w-[90%] rounded-lg overflow-hidden">
+        <div className="flex bg-black h-[50%] w-[90%] rounded-xl overflow-hidden">
           <h2 className="flex justify-center items-center text-4xl font-medium px-4 w-[30%] text-white ml-2">
           Visionary’s Take 
           on Vision Therapy
@@ -127,6 +127,7 @@ export default function Home() {
             <p className="text-white font-medium text-lg">Padma Shri Awardee </p>
             <p className="text-white font-medium text-lg">& Former Optometrist to President of India</p>
           </div>
+          <Image src={"/person-image-2.png"} width={500} height={540} alt="person" />
         </div>
       </section>
     </>  
