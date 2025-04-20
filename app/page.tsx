@@ -1,8 +1,10 @@
 import { BlackBgInfoCards } from "@/components/BlackBgInfoCards";
 import { HeroSection } from "@/components/HeroSection";
 import { NavBar } from "@/components/NavBar";
+import { OfferingSectionCards } from "@/components/OfferingSectionCards";
 import { UpgradeYourPracticeSection } from "@/components/UpgradeYourPracticeSection";
 import { BlackBgInfoCardsData } from "@/data/BlackBgInfoCardsData";
+import { OfferingSectionCardsData } from "@/data/OfferingSectionCardsData";
 import Image from "next/image";
 
 
@@ -33,15 +35,15 @@ export default function Home() {
                   improve thier vision
                 </p> 
               </div>
-              <div className="flex justify-around w-[80%] ml-24">
+              <div className="flex justify-around w-[80%] ml-auto">
                 {BlackBgInfoCardsData.map((items,index)=>(<BlackBgInfoCards key={index} {...items}/>))}
               </div>
             </div>
           </div>
-          <div className=" h-[46%] w-[95%] mt-4 flex">
+          <div className=" h-[46%] w-[95%] mt-4 flex px-12 ml-2">
             <div className="flex flex-col justify-between w-[20%] ">
               <h3 className="text-[#005ab1] ml-2">OFFERINGS</h3>
-              <h3 className="ml-2">
+              <h3 className="ml-2 transform -translate-y-4">
                 Orbsway simplifies vision therapy 
                 with AI-driven tools, real-time 
                 monitoring, and seamless 
@@ -49,36 +51,47 @@ export default function Home() {
                 on what matters most: patient care</h3>
             </div>
             <div className="flex justify-around w-[70%] ml-18">
-              <div className="w-[40%] h-[90%] bg-white rounded-xl my-4 flex justify-center items-center">
-                <div className="w-[99.5%] h-[99.5%] bg-gradient-to-b from-sky-400 to-cyan-200 rounded-xl flex justify-center items-center">
-                  <div className="w-[99.5%] h-[99.5%] bg-white rounded-xl">
-                    <div className="w-full h-[60%] bg-black">
-                      <Image src={"/doctor.svg"} width={200} height={200} alt="image" className="ml-54 transform translate-y-2/3  "/>
-                    </div>
-                    <h3 className="font-bold text-2xl ml-4">For Doctors</h3>
-                    <p className="text-xs ml-4"> Everything you need—vision therapy, patient tracking, appointment management
-                    —all in one seamless, doctor-focused platform</p>
-                    <button className="bg-[#005ab1] text-white p-2 rounded-lg transform translate-x-24 mt-1">EXPLORE OUR PRODUCTS</button>
-                  </div>
-                </div>
-              </div>
-              <div className="w-[40%] h-[90%] bg-white rounded-xl my-4 flex justify-center items-center">
-                <div className="w-[99.5%] h-[99.5%] bg-gradient-to-b from-sky-400 to-cyan-200 rounded-xl flex justify-center items-center">
-                  <div className="w-[99.5%] h-[99.5%] bg-white rounded-xl">
-                    <div className="w-full h-[60%] bg-black">
-                      <Image src={"/patient.svg"} width={120} height={120} alt="image" className="ml-72 transform translate-y-1/4 "/>
-                    </div>
-                    <h3 className="font-bold text-2xl ml-4">For Patients</h3>
-                    <p className="text-xs ml-4"> Everything you need—vision therapy, patient tracking, appointment management
-                    —all in one seamless, doctor-focused platform</p>
-                    <button className="bg-[#005ab1] text-white p-2 rounded-lg transform translate-x-24 mt-1">EXPLORE OUR PRODUCTS</button>
-                  </div>
-                </div>
-              </div>
+              {OfferingSectionCardsData.map((items,index)=>(<OfferingSectionCards key={index} {...items}/>))}
             </div>
           </div>
         </div>  
       </section> 
+      <section className=" max-w-screen max-h-screen flex ml-12"> 
+        {/*Content Part */}
+        <div className="w-[40%] h-full ml-2 mt-28 p-8x  ">
+          <h3 className=" text-black text-2xl font-medium mb-4">
+            We have developed a comprehensive eye 
+            hospital management software</h3>
+          <h3 className="text-[#005ab1] text-4xl font-semibold mb-4">
+          Cloud based healthcare 
+          management Suite
+          </h3>
+          <h3 className="font-medium text-lg">
+          that’s fully Intergated to streamline your health care 
+          management process
+          </h3>
+        </div>
+        
+        {/*Image part*/}
+        <div className="w-[50%] h-auto mt-20 px-8 mb-2">
+          <Image src={"/Manage Appointment-bg-2.svg"} width={400} height={400} alt="image" className="ml-[40%]"/>
+          <Image src={"/Manage Appointment-1.svg"} width={400} height={400} alt="image" className="z-20 ml-[20%] transform -translate-y-1/2"/>
+        </div>
+      </section>
+      <hr className="h-1 mt-2 border-none bg-gradient-to-r from-sky-400 to-cyan-200 w-[90%] px-12 ml-20 transform -translate-y-32 opacity-60 rounded-xl"/>
+      <section className="w-screen h-screen -mt-12">
+        <div className="flex w-full h-full bg-rose-100">
+          {/*Content Side*/}
+          <div className="flex flex-col justify-between bg-sky-200">
+
+          </div>
+          
+          {/*Cards Side Grid*/}
+          <div>
+
+          </div>
+        </div>
+      </section>
     </>  
   );
 }
