@@ -56,9 +56,9 @@ export default function Home() {
           </div>
         </div>  
       </section> 
-      <section className=" max-w-screen max-h-screen flex ml-12"> 
+      <section className=" max-w-screen max-h-screen flex ml-12 mt-12"> 
         {/*Content Part */}
-        <div className="w-[40%] h-full ml-2 mt-28 p-8x  ">
+        <div className="w-[40%] h-full ml-6 mt-28 px-8  ">
           <h3 className=" text-black text-2xl font-medium mb-4">
             We have developed a comprehensive eye 
             hospital management software</h3>
@@ -73,22 +73,42 @@ export default function Home() {
         </div>
         
         {/*Image part*/}
-        <div className="w-[50%] h-auto mt-20 px-8 mb-2">
-          <Image src={"/Manage Appointment-bg-2.svg"} width={400} height={400} alt="image" className="ml-[40%]"/>
-          <Image src={"/Manage Appointment-1.svg"} width={400} height={400} alt="image" className="z-20 ml-[20%] transform -translate-y-1/2"/>
+        <div className="w-[50%] mt-20 px-8 mb-2">
+          <Image src={"/Manage Appointment-bg-2.svg"} width={400} height={400} alt="image" className="ml-[40%] drop-shadow-md"/>
+          <Image src={"/Manage Appointment-1.svg"} width={400} height={400} alt="image" className="z-20 ml-[20%] transform -translate-y-1/2 drop-shadow-md"/>
         </div>
       </section>
-      <hr className="h-1 mt-2 border-none bg-gradient-to-r from-sky-400 to-cyan-200 w-[90%] px-12 ml-20 transform -translate-y-32 opacity-60 rounded-xl"/>
-      <section className="w-screen h-screen -mt-12">
-        <div className="flex w-full h-full bg-rose-100">
+      <hr className="h-1  mt-4 border-none bg-gradient-to-r from-sky-400 to-cyan-200 w-[90%] px-12 ml-20 transform -translate-y-28 opacity-60 rounded-xl"/>
+      <section className="w-screen h-[70vh]">
+        <div className="flex w-full h-full py-8 px-12 gap-10">
           {/*Content Side*/}
-          <div className="flex flex-col justify-between bg-sky-200">
-
-          </div>
+          <div className="flex flex-col justify-between w-[20%]">
+              <h3 className="text-[#005ab1] ml-2 "> Orbsway At a glace</h3>
+              <h3 className=" font-semimedium text-4xl w-[20%] mt-16  transform translate-y-6">
+                Smart.
+                Simple. 
+                Scalable.
+              </h3>
+              <h3 className="ml-2 transform translate-y-2 w-[70%]">
+                Orbsway simplifies vision therapy 
+                with AI-driven tools, real-time 
+                monitoring, and seamless 
+                integration—helping doctors focus 
+                on what matters most: patient care</h3>
+            </div>
           
           {/*Cards Side Grid*/}
-          <div>
-
+          <div className=" w-[75%] grid grid-cols-3 grid-rows-2 gap-4 p-2">
+            <div className="bg-white flex justify-center items-center rounded-lg">
+              <div className="w-[99%] h-[99%] bg-gradient-to-b from-sky-400 to-cyan-200 flex justify-center items-center rounded-lg opacity-50">
+                <div className="flex bg-white w-[99%] h-[99%] rounded-lg">
+                  <div className=" flex w-full h-12 justify-end">
+                    <Image src={"/share.svg"} color="rgba(18, 92, 171, 0)" width={40} height={40} alt="image" className="mr-4"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
           </div>
         </div>
       </section>
