@@ -7,7 +7,7 @@ import { InfoCardsData } from "@/data/InfoCardsData"
 export const UpgradeYourPracticeSection=()=>{
     return(
         <>
-            <div className="absolute z-10 w-screen h-full mt-12 transform translate-x-2">
+            <div className="absolute z-10 w-screen h-full mt-12 transform translate-x-2 overflow-x-hidden mr-8">
                 <Image src={"/Vector-bg.svg"} width={1400} height={50} alt="vector bg" className="opacity-70"/>
             </div>
             <div className="z-20 w-full h-full flex flex-col items-center pt-8">

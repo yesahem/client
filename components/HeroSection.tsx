@@ -4,7 +4,7 @@ import Image from "next/image"
 
 export const HeroSection = () => {
     return(
-        <div className=" w-full h-[70%] flex justify-between mt-6">
+        <div className=" w-full h-[70%] flex justify-between mt-6 overflow-x-hidden">
         <div className="w-[40%] h-full flex flex-col px-28 pt-14">
           <h1 className="text-[#005ab1] font-bold text-5xl">
             Next-Gen 
@@ -15,7 +15,7 @@ export const HeroSection = () => {
             cloud-based solutions—trusted by leading eye 
             institutes.
           </p>
-          <div className="flex gap-x-4 mt-4">
+          <div className="flex gap-x-2 mt-4">
             <div>
               <button className="w-26 h-10 bg-white rounded-lg text-center border border-[#005ab1]">
                 Learn More
@@ -29,7 +29,7 @@ export const HeroSection = () => {
           </div>
         </div>
         <div className="w-[40%] h-full  flex justify-center items-center">
-          <Image src={"/Group 11.svg"} width={350} height={300} alt="boy-girl-table"/>
+          <Image src={"/Group 11.svg"} width={340} height={300} alt="boy-girl-table"/>
         </div>
       </div>
     )
