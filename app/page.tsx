@@ -20,7 +20,7 @@ export default function Home() {
       <section className="relative w-screen h-screen overflow-hidden px-12">
         <UpgradeYourPracticeSection/>
       </section>   
-      <section className="w-screen h-screen ">
+      <section className=" w-screen h-screen ">
         <div className="w-full h-full flex flex-col items-center">
           <div className="bg-black w-[95%] h-[45%] rounded-xl mt-10 flex justify-center py-10 px-8">
             <div className="w-full h-full rounded-xl flex">
@@ -58,9 +58,10 @@ export default function Home() {
           </div>
         </div>  
       </section> 
-      <section className=" max-w-screen max-h-screen flex ml-12 mt-12"> 
+      <section className=" relative max-w-screen max-h-screen flex ml-12 mt-12"> 
+      <Image src={"/info-vector-svg.svg"} width={1400} height={50} alt="image" className="z-10 absolute "/>
         {/*Content Part */}
-        <div className="w-[40%] h-full ml-6 mt-28 px-8  ">
+        <div className="z-20 w-[40%] h-full ml-6 mt-28 px-8  ">
           <h3 className=" text-black text-2xl font-medium mb-4">
             We have developed a comprehensive eye 
             hospital management software</h3>
@@ -75,13 +76,13 @@ export default function Home() {
         </div>
         
         {/*Image part*/}
-        <div className="w-[50%] mt-20 px-8 mb-2">
+        <div className="z-20 w-[50%] mt-20 px-8 mb-2">
           <Image src={"/Manage Appointment-bg-2.svg"} width={500} height={500} alt="image" className="ml-[30%] drop-shadow-md"/>
           <Image src={"/Manage Appointment-1.svg"} width={500} height={500} alt="image" className="z-20 ml-[10%] transform -translate-y-1/2 drop-shadow-md"/>
         </div>
       </section>
-      <hr className="h-1  mt-4 border-none bg-gradient-to-r from-sky-400 to-cyan-200 w-[90%] px-12 ml-20 transform -translate-y-28 opacity-60 rounded-xl"/>
-      <section className="w-screen h-[70vh]">
+      <hr className="absolute z-50 h-1 mt-4 border-none bg-gradient-to-r from-sky-400 to-cyan-200 w-[90%] px-12 ml-20 transform -translate-y-28 opacity-60 rounded-xl"/>
+      <section className="w-screen h-[70vh] -mt-12  ">
         <div className="flex w-full h-full py-8 px-14 gap-10">
           {/*Content Side*/}
           <div className="flex flex-col justify-between w-[20%]">
@@ -102,6 +103,29 @@ export default function Home() {
           {/*Cards Side Grid*/}
           <div className=" w-[75%] grid grid-cols-3 grid-rows-2 gap-4 p-2">
             {OrbswayAtAGlanceSectionsData.map((items,index)=>(<OrbswayAtAGlanceSectionCards key={index} {...items}/>))}            
+          </div>
+        </div>
+      </section>
+      <section className="w-screen h-[150vh] flex justify-center mt-12">
+        <div className="flex bg-black h-[50%] w-[90%] rounded-lg overflow-hidden">
+          <h2 className="flex justify-center items-center text-4xl font-medium px-4 w-[30%] text-white ml-2">
+          Visionary’s Take 
+          on Vision Therapy
+          </h2>
+          <div className=" flex flex-col w-[30%] justify-center"> 
+          <Image src={"/inverted-double-quotes.svg"} width={200} height={200} alt="quotes" className="transform -translate-y-20"/>
+            <p className="text-white text-xs mt-6">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam 
+              `eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, 
+              metus nec fringilla accumsan, risus sem sollicitudin lacus, ut 
+              interdum tellus elit sed risus. Maecenas eget condimentum 
+              velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad 
+              litora torquent per conubia nostra, per inceptos himenaeos. 
+            </p>
+            <hr className=" w-[15%] h-2 mt-8 bg-gradient-to-r from-sky-400 to-cyan-200"/>
+            <h3 className="text-lg font-semibold text-[#3061d7]">Dr. Vipin Buckshey,</h3>
+            <p className="text-white font-medium text-lg">Padma Shri Awardee </p>
+            <p className="text-white font-medium text-lg">& Former Optometrist to President of India</p>
           </div>
         </div>
       </section>
