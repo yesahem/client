@@ -1,6 +1,6 @@
-import { FooterListItemsProps } from "@/components/FooterListItems";
+import { ListItemsProps } from "@/components/ListItems";
 
-export const FooterListItemsData:FooterListItemsProps[]=[
+export const FooterListItemsData:ListItemsProps[]=[
     {
         img:"/arrow-circle-left.svg",
         content:" Products",

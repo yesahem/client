@@ -1,6 +1,8 @@
+"use client"
+
 import { BlackBgInfoCards } from "@/components/BlackBgInfoCards";
 import { FooterIcons } from "@/components/FooterIcons";
-import { FooterListItems } from "@/components/FooterListItems";
+import { ListItems } from "@/components/ListItems";
 import { HeroSection } from "@/components/HeroSection";
 import { NavBar } from "@/components/NavBar";
 import { OfferingSectionCards } from "@/components/OfferingSectionCards";
@@ -12,6 +14,7 @@ import { FooterListItemsData } from "@/data/FooterListItemsData";
 import { OfferingSectionCardsData } from "@/data/OfferingSectionCardsData";
 import { OrbswayAtAGlanceSectionsData } from "@/data/OrbswayAtAGlanceSectionCardsData";
 import Image from "next/image";
+import { Footer } from "@/components/Footer";
 
 
 export default function Home() {
@@ -36,9 +39,7 @@ export default function Home() {
                   with patient 
                 </h3>
                 <p className="text-white mt-4 text-sm ml-4">
-                  From Hospitals to homes, 
-                  Orbsway is helping hundreds 
-                  improve thier vision
+                  From Hospitals to homes, Orbsway is helping hundreds improve thier vision
                 </p> 
               </div>
               <div className="flex justify-around w-[80%] ml-auto">
@@ -50,11 +51,7 @@ export default function Home() {
             <div className="flex flex-col justify-between w-[20%] ">
               <h3 className="text-[#005ab1] ml-2">OFFERINGS</h3>
               <h3 className="ml-2 transform -translate-y-4">
-                Orbsway simplifies vision therapy 
-                with AI-driven tools, real-time 
-                monitoring, and seamless 
-                integration—helping doctors focus 
-                on what matters most: patient care</h3>
+                Orbsway simplifies vision therapy with AI-driven tools, real-time monitoring, and seamless integration—helping doctors focus on what matters most: patient care</h3>
             </div>
             <div className="flex justify-around w-[70%] ml-18">
               {OfferingSectionCardsData.map((items,index)=>(<OfferingSectionCards key={index} {...items}/>))}
@@ -67,15 +64,12 @@ export default function Home() {
         {/*Content Part */}
         <div className="z-20 w-[40%] h-full ml-6 mt-28 px-8  ">
           <h3 className=" text-black text-2xl font-medium mb-4">
-            We have developed a comprehensive eye 
-            hospital management software</h3>
+            We have developed a comprehensive eye hospital management software</h3>
           <h3 className="text-[#005ab1] text-4xl font-semibold mb-4">
-          Cloud based healthcare 
-          management Suite
+          Cloud based healthcare management Suite
           </h3>
           <h3 className="font-medium text-lg">
-          that’s fully Intergated to streamline your health care 
-          management process
+          that’s fully Intergated to streamline your health care management process
           </h3>
         </div>
         
@@ -97,13 +91,8 @@ export default function Home() {
                 Scalable.
               </h3>
               <h3 className="ml-4 transform translate-y-2 w-[70%]">
-                Orbsway simplifies vision therapy 
-                with AI-driven tools, real-time 
-                monitoring, and seamless 
-                integration—helping doctors focus 
-                on what matters most: patient care</h3>
-          </div>
-          
+                Orbsway simplifies vision therapy with AI-driven tools, real-time monitoring, and seamless integration—helping doctors focus on what matters most: patient care</h3>
+          </div> 
           {/*Cards Side Grid*/}
           <div className=" w-[75%] grid grid-cols-3 grid-rows-2 gap-4 p-2">
             {OrbswayAtAGlanceSectionsData.map((items,index)=>(<OrbswayAtAGlanceSectionCards key={index} {...items}/>))}            
@@ -152,38 +141,7 @@ export default function Home() {
         </div>
         <hr className="h-1  border-none bg-gradient-to-r from-sky-400 to-cyan-200 w-[80%] px-12 ml-20 transform -translate-y-28 -translate-x-10 opacity-60 rounded-xl"/>
         </section>
-      <footer className="h-[30vh] w-full flex justify-center transform -translate-y-1/4">
-        <div className="grid grid-cols-4 w-[90%] gap-2">
-          <div className=" flex justify-center items-center">
-            <Image src={"/footer-logo.svg"} width={200} height={100} alt="image"/>
-          </div>
-          <div className=" w-[90%] flex flex-col justify-center items-center">
-            <p className="mt-6 ml-6 ">
-              <span className="font-medium">
-                Address vision challenges with 
-                innovative,
-              </span> 
-              cloud-based solutions—
-              trusted by leading eye institutes.
-            </p>
-            <div className="grid grid-cols-5 w-full gap-1 px-8 mt-1">
-              {FooterIconsData.map((items,index)=>(<FooterIcons key={index} {...items}/>))}                
-            </div>
-          </div>
-          <div className=" flex flex-col justify-center">
-            <h3 className="font-medium ml-8">Links</h3>
-            <ul className="ml-8 mt-1">
-              {FooterListItemsData.slice(0,3).map((items,index)=>(<FooterListItems key={index} {...items}/>))}
-            </ul>
-          </div>
-          <div className="flex flex-col justify-center bg-sky-100">
-            <h3 className="font-medium ml-8">Contact</h3>
-            <ul className="ml-8 mt-1">
-              {FooterListItemsData.slice(3).map((items,index)=>(<FooterListItems key={index} {...items}/>))}
-            </ul>
-          </div>
-        </div>
-      </footer>
+        <Footer/>
     </>  
   );
 }
