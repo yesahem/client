@@ -1,16 +1,13 @@
 "use client"
 
 import { BlackBgInfoCards } from "@/components/BlackBgInfoCards";
-import { FooterIcons } from "@/components/FooterIcons";
-import { ListItems } from "@/components/ListItems";
+
 import { HeroSection } from "@/components/HeroSection";
 import { NavBar } from "@/components/NavBar";
 import { OfferingSectionCards } from "@/components/OfferingSectionCards";
 import { OrbswayAtAGlanceSectionCards } from "@/components/OrbswayAtAGlanceSectionCards";
 import { UpgradeYourPracticeSection } from "@/components/UpgradeYourPracticeSection";
 import { BlackBgInfoCardsData } from "@/data/BlackBgInfoCardsData";
-import { FooterIconsData } from "@/data/FooterIconsData";
-import { FooterListItemsData } from "@/data/FooterListItemsData";
 import { OfferingSectionCardsData } from "@/data/OfferingSectionCardsData";
 import { OrbswayAtAGlanceSectionsData } from "@/data/OrbswayAtAGlanceSectionCardsData";
 import Image from "next/image";
@@ -127,7 +124,7 @@ export default function Home() {
               <h3 className="font-medium text-5xl mb-6">
                 Join The Future Of Vision Therapy
               </h3>
-              <p className="w-[88%] mb-12">Orbsway is  trusted by  doctors, hospitals, and vision care pioneers. Whether you're ready to get  started or just want to know more - we're here for you.</p>
+              <p className="w-[88%] mb-12">Orbsway is  trusted by  doctors, hospitals, and vision care pioneers. Whether you&apos;re ready to get  started or just want to know more - we&apos;re here for you.</p>
               <div className="flex flex-col  gap-2">
                 <button className="w-[90%] rounded-lg bg-whtie text-blue-500 font-medium border border-blue-500  p-2">REQUEST A CALLBACK</button>
                 <button className="w-[90%] rounded-lg text-white font-medium bg-blue-500 p-2">REQUEST FOR FREE TRIAL</button>

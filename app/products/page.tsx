@@ -19,8 +19,8 @@ export default function Product() {
                             <h2 className="text-[#005ab1] text-4xl font-bold ml-20">That Redefine Vision Care</h2>
                             <p className="ml-20  mt-4 w-[67%]">
                                 From personalised therapy for patients to smart tools for doctors, our product suite is 
-                                built to simplify, digitize, and elevate the way eye care is delivered. Whether you're 
-                                treating, managing, or tracking—there’s a solution designed just for you.
+                                built to simplify, digitize, and elevate the way eye care is delivered. Whether you&apos;re 
+                                treating, managing, or tracking—there&apos;s a solution designed just for you.
                             </p>
                         </div>
                         <div>
