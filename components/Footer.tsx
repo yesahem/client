@@ -32,7 +32,7 @@ export const Footer = () => {
                       {FooterListItemsData.slice(0,3).map((items,index)=>(<ListItems key={index} {...items}/>))}
                     </ul>
                   </div>
-                  <div className="flex flex-col justify-center bg-sky-100">
+                  <div className="flex flex-col justify-center">
                     <h3 className="font-medium ml-8">Contact</h3>
                     <ul className="ml-8 mt-1">
                       {FooterListItemsData.slice(3).map((items,index)=>(<ListItems key={index} {...items}/>))}
