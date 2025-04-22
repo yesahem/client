@@ -1,10 +1,14 @@
 import { BlackBgInfoCards } from "@/components/BlackBgInfoCards";
+import { FooterIcons } from "@/components/FooterIcons";
+import { FooterListItems } from "@/components/FooterListItems";
 import { HeroSection } from "@/components/HeroSection";
 import { NavBar } from "@/components/NavBar";
 import { OfferingSectionCards } from "@/components/OfferingSectionCards";
 import { OrbswayAtAGlanceSectionCards } from "@/components/OrbswayAtAGlanceSectionCards";
 import { UpgradeYourPracticeSection } from "@/components/UpgradeYourPracticeSection";
 import { BlackBgInfoCardsData } from "@/data/BlackBgInfoCardsData";
+import { FooterIconsData } from "@/data/FooterIconsData";
+import { FooterListItemsData } from "@/data/FooterListItemsData";
 import { OfferingSectionCardsData } from "@/data/OfferingSectionCardsData";
 import { OrbswayAtAGlanceSectionsData } from "@/data/OrbswayAtAGlanceSectionCardsData";
 import Image from "next/image";
@@ -106,7 +110,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="w-screen h-[150vh] flex justify-center mt-12">
+      <section className="w-screen h-[150vh] flex flex-col items-center mt-12 gap-10">
         <div className="flex bg-black h-[45%] w-[90%] rounded-xl overflow-hidden">
           <h2 className="flex justify-center items-center text-4xl font-medium px-4 w-[30%] text-white ml-2">
           Visionary’s Take 
@@ -129,7 +133,57 @@ export default function Home() {
           </div>
           <Image src={"/person-image-2.png"} width={450} height={600} alt="person" />
         </div>
-      </section>
+        <div className=" w-[90%] h-[45%] flex gap-12 mt-4">
+          <div className=" flex flex-col w-[30%]">
+              <h3 className="font-medium text-5xl mb-6">
+                Join The Future Of Vision Therapy
+              </h3>
+              <p className="w-[88%] mb-12">Orbsway is  trusted by  doctors, hospitals, and vision care pioneers. Whether you're ready to get  started or just want to know more - we're here for you.</p>
+              <div className="flex flex-col  gap-2">
+                <button className="w-[90%] rounded-lg bg-whtie text-blue-500 font-medium border border-blue-500  p-2">REQUEST A CALLBACK</button>
+                <button className="w-[90%] rounded-lg text-white font-medium bg-blue-500 p-2">REQUEST FOR FREE TRIAL</button>
+              </div>
+          </div>
+          <div>
+            <form>
+              
+            </form>
+          </div>
+        </div>
+        <hr className="h-1  border-none bg-gradient-to-r from-sky-400 to-cyan-200 w-[80%] px-12 ml-20 transform -translate-y-28 -translate-x-10 opacity-60 rounded-xl"/>
+        </section>
+      <footer className="h-[30vh] w-full flex justify-center transform -translate-y-1/4">
+        <div className="grid grid-cols-4 w-[90%] gap-2">
+          <div className=" flex justify-center items-center">
+            <Image src={"/footer-logo.svg"} width={200} height={100} alt="image"/>
+          </div>
+          <div className=" w-[90%] flex flex-col justify-center items-center">
+            <p className="mt-6 ml-6 ">
+              <span className="font-medium">
+                Address vision challenges with 
+                innovative,
+              </span> 
+              cloud-based solutions—
+              trusted by leading eye institutes.
+            </p>
+            <div className="grid grid-cols-5 w-full gap-1 px-8 mt-1">
+              {FooterIconsData.map((items,index)=>(<FooterIcons key={index} {...items}/>))}                
+            </div>
+          </div>
+          <div className=" flex flex-col justify-center">
+            <h3 className="font-medium ml-8">Links</h3>
+            <ul className="ml-8 mt-1">
+              {FooterListItemsData.slice(0,3).map((items,index)=>(<FooterListItems key={index} {...items}/>))}
+            </ul>
+          </div>
+          <div className="flex flex-col justify-center bg-sky-100">
+            <h3 className="font-medium ml-8">Contact</h3>
+            <ul className="ml-8 mt-1">
+              {FooterListItemsData.slice(3).map((items,index)=>(<FooterListItems key={index} {...items}/>))}
+            </ul>
+          </div>
+        </div>
+      </footer>
     </>  
   );
 }
