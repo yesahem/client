@@ -25,7 +25,7 @@ export const ProductsMobileView = () => {
                     From personalised therapy for patients to smart tools 
                     for doctors, our product suite is built to simplify, 
                     digitize, and elevate the way eye care is delivered. 
-                    Whether you're treating, managing, or tracking—
+                    Whether you&apos;re treating, managing, or tracking—
                     there’s a solution designed just for you.
                 </p>
             </section>

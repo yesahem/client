@@ -1,6 +1,5 @@
 
 import { Footer } from "@/components/Footer"
-import { ListItems } from "@/components/ListItems"
 import { NavBar } from "@/components/NavBar"
 import { ProductsDoctorsSection } from "@/components/ProductsDoctorsSection"
 import { ProductsMobileView } from "@/components/ProductsMobileView"
