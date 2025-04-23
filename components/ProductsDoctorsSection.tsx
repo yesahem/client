@@ -12,7 +12,7 @@ export type ProductsDoctorsSectionProps={
 export const ProductsDoctorsSection = ({img,heading}:ProductsDoctorsSectionProps) => {
     return(
         <div className="xl:py-10 xl:px-4 md:px-1 py-10">
-            <div className="bg-white md:h-[97%] w-full xl:h-[85%] rounded-xl flex flex-col border-2 border-blue-100 box-border ">
+            <div className="bg-white md:h-[95%] w-full xl:h-[81%] lg:h-[87%] rounded-xl flex flex-col border-2 border-blue-100 box-border ">
                 <div className=" xl:h-[8%] w-full flex justify-end pr-4 md:pr-2">
                     <Image src={"/share.svg"} width={40} height={40} alt="image" className="md:mt-2 "   />
                 </div>
@@ -25,8 +25,8 @@ export const ProductsDoctorsSection = ({img,heading}:ProductsDoctorsSectionProps
                     <button className="w-fit-content xl:text-lg xl:px-8 xl:py-2 border border-[#005ab1] text-[#005ab1] rounded-lg md:px-2 md:py-1 md:text-xs">Learn More</button>
                     <button className="w-fit-content xl:text-lg xl:px-8 xl:py-2 bg-[#005ab1] text-white rounded-lg md:px-2 md:text-xs">Explore Now</button>
                 </div>
-                <Image src={img} width={400} height={400} alt="image" className="xl:ml-6 xl:mt-12 md:hidden xl:block"/>
-                <Image src={img} width={220} height={220} alt="image" className="xl:hidden md:ml-2 md:mt-16"/>
+                <Image src={img} width={400} height={400} alt="image" className="xl:ml-6 xl:mt-12 md:hidden xl:block lg:block lg:mt-6"/>
+                <Image src={img} width={220} height={220} alt="image" className="lg:hidden md:ml-2 md:mt-16 "/>
 
             </div>
         </div>
