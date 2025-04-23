@@ -6,9 +6,9 @@ import { FooterListItemsData } from "@/data/FooterListItemsData"
 import { FooterIcons } from "./FooterIcons"
 import { ListItems } from "./ListItems"
 
-export const    Footer = () => {
+export const   Footer = () => {
     return(
-        <footer className="h-[30vh] w-full flex justify-center transform -translate-y-1/4">
+        <footer className="hidden h-[30vh] w-full sm:flex justify-center transform -translate-y-1/4">
             <div className="grid grid-cols-4 w-[90%] gap-2">
                 <div className=" flex justify-center items-center ">
                 <Image src={"/footer-logo.svg"} width={200} height={100} alt="image" className="md:hidden xl:block"/>

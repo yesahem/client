@@ -9,12 +9,11 @@ import { ProductDoctorSectionMobileView } from "./ProductDoctorSectionMobileView
 import { FooterIconsData } from "@/data/FooterIconsData";
 import { FooterIcons } from "./FooterIcons";
 import { FooterListItemsData } from "@/data/FooterListItemsData";
-import { ListItems } from "./ListItems";
 
 export const ProductsMobileView = () => {
     return(
         <>
-            <section className="w-screen h-[80vh] overflow-hiddensm:hidden flex flex-col items-center">
+            <section className="w-screen h-[80vh] overflow-hidden flex flex-col items-center sm:hidden">
                 <div className=" w-[95%] h-[7%] flex justify-between">
                     <Image src={"/Logo.png"}  width={100} height={50} alt="logo"/>
                     <Menu strokeWidth={"2px"} size={30} className="mt-2"/>
@@ -30,7 +29,7 @@ export const ProductsMobileView = () => {
                     there’s a solution designed just for you.
                 </p>
             </section>
-            <section className=" h-[250vh] w-full bg-blue-100 rounded-xl px-4 py-4 flex flex-col overflow-hidden">
+            <section className=" h-[250vh] w-full bg-blue-100 rounded-xl px-4 py-4 flex flex-col overflow-hidden sm:hidden">
                 <h3 className="text-[#005ab1] text-lg font-medium"> Products | Doctors</h3>
                 <h3 className="text-lg font-medium w-[60%] mt-8">Trusted by Clinics. Proven with patient </h3>
                 <p className="text-sm mt-2 w-[90%]">From Hospitals to homes, Orbsway is helping 
@@ -38,7 +37,7 @@ export const ProductsMobileView = () => {
                 {ProductDoctorSectionMobileViewData.map((items,index)=>(<ProductDoctorSectionMobileView key={index} {...items}/>))}
                 <Image src={"/Standing Doctor.svg"} width={150} height={150} alt="standing doctor" className="transform -translate-y-24 -translate-x-4"/>                
             </section>
-            <section className="relative  h-[200vh] w-full bg-blue-100 rounded-xl px-4 py-4 flex flex-col mt-8 ">
+            <section className="relative  h-[200vh] w-full bg-blue-100 rounded-xl px-4 py-4 flex flex-col mt-8 sm:hidden">
                 <h3 className="text-[#005ab1] text-lg font-medium"> Products | Doctors</h3>
                 <h3 className="text-lg font-medium w-[60%] mt-8">Trusted by Clinics. Proven with patient </h3>
                 <p className="text-sm mt-2 w-[90%]">From Hospitals to homes, Orbsway is helping 
@@ -50,7 +49,7 @@ export const ProductsMobileView = () => {
                 </div>
                 <Image src={"/standing-girl.svg"} width={190} height={190} alt="image" className="absolute bottom-0 right-[2%]"/>
             </section>
-            <section className="w-full h-[120vh] bg-black rounded-xl mt-12 flex flex-col px-8 py-4">
+            <section className="w-full h-[120vh] bg-black rounded-xl mt-12 flex flex-col px-8 py-4 sm:hidden">
                 <div className=" w-full h-full rounded-xl">
                     <h3 className="text-white font-bold text-xl ml-4 mt-2">VR Integrations</h3>
                     <p className="text-white text-xs w-[80%] ml-4 mt-4 mb-4"> Jorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. </p>
@@ -61,7 +60,7 @@ export const ProductsMobileView = () => {
                 <p className="w-[70%] text-xs text-white mt-8 ml-8"> Jorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Jorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Jorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie.</p>
                 </div>
             </section>
-            <footer className="h-[100vh] w-full flex flex-col items-center px-4">
+            <footer className="h-[100vh] w-full flex flex-col items-center px-4 sm:hidden">
                 <Image src={"/footer-logo.svg"} width={200} height={200} alt="logo"/>
                 <p className=" ">Address vision challenges with innovative, cloud-based solutions—trusted by leading eye institutes.</p>
                 <div className="flex gap-4 mt-6">{FooterIconsData.map((items,index)=>(<FooterIcons key={index} {...items}/>))}</div>
