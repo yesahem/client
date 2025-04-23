@@ -35,7 +35,7 @@ export const ProductsMobileView = () => {
                 <p className="text-sm mt-2 w-[90%]">From Hospitals to homes, Orbsway is helping 
                 hundreds improve thier vision</p>
                 {ProductDoctorSectionMobileViewData.map((items,index)=>(<ProductDoctorSectionMobileView key={index} {...items}/>))}
-                <Image src={"/Standing Doctor.svg"} width={150} height={150} alt="standing doctor" className="transform -translate-y-24 -translate-x-4"/>                
+                <Image src={"/Standing Doctor.svg"} width={150} height={150} alt="standing doctor" className="transform -translate-y-12 -translate-x-4"/>                
             </section>
             <section className="relative  h-[200vh] w-full bg-blue-100 rounded-xl px-4 py-4 flex flex-col mt-8 sm:hidden">
                 <h3 className="text-[#005ab1] text-lg font-medium"> Products | Doctors</h3>
