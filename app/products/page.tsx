@@ -3,6 +3,7 @@ import { Footer } from "@/components/Footer"
 import { ListItems } from "@/components/ListItems"
 import { NavBar } from "@/components/NavBar"
 import { ProductsDoctorsSection } from "@/components/ProductsDoctorsSection"
+import { ProductsMobileView } from "@/components/ProductsMobileView"
 import { ProductPatientsList } from "@/components/ProductsPatientsList"
 import { VrIntegrationList } from "@/components/VrIntegrationsList"
 import { ProductsDoctorsSectionData } from "@/data/ProductsDoctorsSectionData"
@@ -12,13 +13,17 @@ import Image from "next/image"
 export default function Product() {
     return(
         <>
-            <section className="relative w-screen h-[70vh] flex flex-col xl:px-12 overflow-hidden md:flex flex-col px-12 overflow-hidden">
-                    <Image src={"/info-vector-svg.svg"} width={1400} height={700} alt="image" className="absolute z-10 mt-12 ml-24 sm:hidden"/>
+            {/* Mobile View */}
+            <ProductsMobileView/>
+
+            
+            <section className="hidden relative w-screen h-[70vh] flex flex-col xl:px-12 overflow-hidden md:flex flex-col px-12 overflow-hidden sm:block">
+                    <Image src={"/info-vector-svg.svg"} width={1400} height={700} alt="image" className="absolute z-10 mt-12 ml-24"/>
                     <NavBar/>
                     <div className="z-20 flex gap-4 w-full h-[89%] px-4 md:flex gap-2 w-full h-[89%] md:px-1">
                         <div className="w-[70%] h-full flex flex-col justify-center md:flex flex-col justify-center">
                             <h2 className="text-[#005ab1] xl:text-4xl xl:font-bold xl:ml-20 md:text-lg font-bold md:ml-12">Discover Tools</h2>
-                            <h2 className="text-[#005ab1] xl:text-4xl xl:font-bold   xl:ml-20 md:text-lg font-bold md:ml-12">That Redefine Vision Care</h2>
+                            <h2 className="text-[#005ab1] xl:text-4xl xl:font-bold   xl:ml-20 md:text-lg font-bold md:ml-12 ">That Redefine Vision Care</h2>
                             <p className="w-[67%] xl:ml-20 xl:mt-4 xl:text-[1rem] md:ml-12 mt-2 md:text-xs ">
                                 From personalised therapy for patients to smart tools for doctors, our product suite is 
                                 built to simplify, digitize, and elevate the way eye care is delivered. Whether you&apos;re 
@@ -30,7 +35,7 @@ export default function Product() {
                         </div>
                     </div>
             </section>   
-            <section className="w-full h-[210vh] xl:px-8 md:px-2 flex flex-col md:ml-2">
+            <section className="hidden w-full h-[210vh] xl:px-8 md:px-2 flex flex-col md:ml-2 sm:block ">
                 <div className="w-full h-[50%] bg-blue-100 rounded-xl grid grid-cols-3 xl:gap-1  md:gap-0.5 h-[40%]">
                     <div className="flex flex-col xl:pl-12 md:pl-4 ">
                         <h3 className="text-[#005ab1] xl:mt-2 xl:text-lg xl:font-medium xl:mt-6 md:mt-2 md:text-lg md:mt-12"> Products | Doctors</h3>
@@ -103,7 +108,7 @@ export default function Product() {
                     </div>
                 </div>
             </section>
-            <section className=" relative max-w-screen h-[60vh] flex ml-12 mt-12"> 
+            <section className=" hidden relative max-w-screen h-[60vh] sm:flex ml-12 mt-12"> 
                 <Image src={"/info-vector-svg.svg"} width={1400} height={50} alt="image" className=" absolute  "/>
                 
                 <div className="z-20 w-[40%] h-full ml-6 mt-28 px-8  ">
@@ -127,9 +132,9 @@ export default function Product() {
                 </div>
                 
             </section>
-            <hr className="h-1  border-none bg-gradient-to-r from-sky-400 to-cyan-200 w-[80%] px-12 xl:ml-20 md:ml-6 transform translate-y-28 translate-x-16 opacity-60 rounded-xl"/>
+            <hr className="hidden h-1  border-none bg-gradient-to-r from-sky-400 to-cyan-200 w-[80%] px-12 xl:ml-20 md:ml-6 transform translate-y-28 translate-x-16 md:translate-y-8 opacity-60 rounded-xl sm:block"/>
 
-            <footer className=" h-[30vh] mt-54 "> <Footer/></footer>
+            <footer className=" hidden h-[30vh] mt-54 md:mt-24 sm:block "> <Footer/></footer>
         </>
     )
 }
