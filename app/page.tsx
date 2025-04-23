@@ -12,19 +12,21 @@ import { OfferingSectionCardsData } from "@/data/OfferingSectionCardsData";
 import { OrbswayAtAGlanceSectionsData } from "@/data/OrbswayAtAGlanceSectionCardsData";
 import Image from "next/image";
 import { Footer } from "@/components/Footer";
+import { HomeMobileView } from "@/components/HomeMobileView";
 
 
 export default function Home() {
   return (
     <>  
-      <div className="w-screen h-[83vh] bg-white flex flex-col px-12 overflow-x-hidden">
+      <HomeMobileView/>
+      <div className=" hidden w-screen h-[83vh] bg-white flex flex-col px-12 overflow-x-hidden sm:block">
         <NavBar/>
         <HeroSection/>
       </div>
-      <section className="relative w-screen h-screen overflow-hidden px-12">
+      <section className=" hidden relative w-screen h-screen overflow-hidden px-12 sm:block">
         <UpgradeYourPracticeSection/>
       </section>   
-      <section className=" w-screen h-screen ">
+      <section className=" hidden w-screen h-screen  sm:block">
         <div className="w-full h-full flex flex-col items-center">
           <div className="bg-black w-[95%] h-[45%] rounded-xl mt-10 flex justify-center py-10 px-8">
             <div className="w-full h-full rounded-xl flex">
@@ -56,7 +58,7 @@ export default function Home() {
           </div>
         </div>  
       </section> 
-      <section className=" relative max-w-screen max-h-screen flex ml-12 mt-12"> 
+      <section className=" hidden sm:relative max-w-screen max-h-screen flex ml-12 mt-12 "> 
       <Image src={"/info-vector-svg.svg"} width={1400} height={50} alt="image" className="z-10 absolute "/>
         {/*Content Part */}
         <div className="z-20 w-[40%] h-full ml-6 mt-28 px-8  ">
@@ -76,8 +78,8 @@ export default function Home() {
           <Image src={"/Manage Appointment-1.svg"} width={500} height={500} alt="image" className="z-20 ml-[10%] transform -translate-y-1/2 drop-shadow-md"/>
         </div>
       </section>
-      <hr className="absolute z-50 h-1 mt-4 border-none bg-gradient-to-r from-sky-400 to-cyan-200 w-[90%] px-12 ml-20 transform -translate-y-28 opacity-60 rounded-xl"/>
-      <section className="w-screen h-[70vh] -mt-12  ">
+      <hr className="hidden absolute z-50 h-1 mt-4 border-none bg-gradient-to-r from-sky-400 to-cyan-200 w-[90%] px-12 ml-20 transform -translate-y-28 opacity-60 rounded-xl sm:block"/>
+      <section className="hidden w-screen h-[70vh] -mt-12  sm:block">
         <div className="flex w-full h-full py-8 px-14 gap-10">
           {/*Content Side*/}
           <div className="flex flex-col justify-between w-[20%]">
@@ -96,7 +98,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="w-screen h-[150vh] flex flex-col items-center mt-12 gap-10">
+      <section className="hidden sm:w-screen h-[150vh] flex flex-col items-center mt-12 gap-10 sm:block">
         <div className="flex bg-black h-[45%] w-[90%] rounded-xl overflow-hidden">
           <h2 className="flex justify-center items-center text-4xl font-medium px-4 w-[30%] text-white ml-2">
           Visionary’s Take 

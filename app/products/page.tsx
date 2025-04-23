@@ -14,7 +14,7 @@ export default function Product() {
     return(
         <>
             {/* Mobile View */}
-            <ProductsMobileView/>
+            <ProductsMobileView />
 
             
             <section className="hidden relative w-screen h-[70vh] flex flex-col xl:px-12 overflow-hidden md:flex flex-col px-12 overflow-hidden sm:block">
@@ -127,8 +127,8 @@ export default function Product() {
                 </div>
                 
                 <div className="z-20 w-[50%] mt-20 px-8 mb-2">
-                    <Image src={"/Manage Appointment-bg-2.svg"} width={500} height={500} alt="image" className="xl:ml-[30%] drop-shadow-md md:ml-[15%]"/>
-                    <Image src={"/Manage Appointment-1.svg"} width={500} height={500} alt="image" className="z-20 xl:ml-[10%] transform -translate-y-1/2 drop-shadow-md"/>
+                    <Image src={"/Manage Appointment-bg-2.svg"} width={500} height={500} alt="image" className="xl:ml-[30%] xl:-mt-12 drop-shadow-md md:ml-[15%]"/>
+                    <Image src={"/Manage Appointment-1.svg"} width={500} height={500} alt="image" className="z-20 xl:ml-[10%] transform -translate-y-54 drop-shadow-md"/>
                 </div>
                 
             </section>
