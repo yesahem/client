@@ -6,7 +6,7 @@ export const HeroSection = () => {
     return(
         <div className=" w-full h-[70%] flex justify-between mt-6 overflow-x-hidden">
         <div className="xl:w-[40%] xl:px-28 xl:pt-16 lg:w-[60%] h-full flex flex-col lg:px-28 pt-12 md:w-[57%] md:px-24 pt-14 ">
-          <h1 className="lg:text-[#005ab1] font-bold lg:text-5xl md:text-3xl -ml-6 text-[#005ab1]">
+          <h1 className="lg:text-[#005ab1] font-bold lg:text-5xl md:text-3xl ml-6 text-[#005ab1]">
             Next-Gen 
             Vision Therapy
           </h1>
