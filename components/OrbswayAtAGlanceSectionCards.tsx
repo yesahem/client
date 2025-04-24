@@ -16,10 +16,10 @@ export const OrbswayAtAGlanceSectionCards = ({img,heading,description}:OrbswayAt
                 <div className=" flex w-full h-12 justify-end">
                 <Image src={img} color="rgba(18, 92, 171, 0)" width={50} height={50} alt="image" className="mr-4 mt-4"/>
                 </div>
-                <h3 className="text-xl font-semibold mt-1 text-black w-[50%] ml-4"> 
+                <h3 className="lg:text-xl font-semibold mt-1 text-black w-[50%] ml-4 md:text-sm"> 
                 {heading}
                 </h3>
-                <p className="text-black text-sm w-[90%] ml-4 mt-1">
+                <p className="text-black lg:text-sm w-[90%] ml-4 mt-1 md:text-[0.5rem]">
                 {description}
                 </p>
             </div>
