@@ -11,7 +11,7 @@ export type OfferingSectionCardsProps = {
   description: string;
 };
 
-
+/*
 <!-- export const OfferingSectionCards = ({image, imgh, imgw, styling, heading, description}: OfferingSectionCardsProps) => {
     return (
         <div className="w-full h-full  sm:w-[85%] md:w-[70%] lg:w-[40%] h-auto bg-white rounded-xl my-4 flex justify-center items-center">
@@ -33,7 +33,7 @@ export type OfferingSectionCardsProps = {
                     </button>
                 </div>    
             </div> -->
-
+*/
 export const OfferingSectionCards = ({
   image,
   imgh,
@@ -66,4 +66,3 @@ export const OfferingSectionCards = ({
     </div>
   );
 };
-
