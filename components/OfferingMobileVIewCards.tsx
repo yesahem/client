@@ -8,6 +8,7 @@ export type OfferingMobileCardsProps = {
   img: string;
   w: number;
   h: number;
+  style: string;
 };
 
 export const OfferingMobileViewCards = ({
