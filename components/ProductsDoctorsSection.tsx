@@ -4,31 +4,63 @@ import Image from "next/image"
 import { ProductsListData } from "@/data/ProductsList"
 import { ListItems } from "./ListItems"
 
-export type ProductsDoctorsSectionProps={
-    heading:string,
-    img:string,
+export type ProductsDoctorsSectionProps = {
+  heading: string
+  img: string
 }
 
-export const ProductsDoctorsSection = ({img,heading}:ProductsDoctorsSectionProps) => {
-    return(
-        <div className="xl:py-10 xl:px-4 md:px-1 py-10">
-            <div className="bg-white md:h-[95%] w-full xl:h-[81%] lg:h-[87%] rounded-xl flex flex-col border-2 border-blue-100 box-border ">
-                <div className=" xl:h-[8%] w-full flex justify-end pr-4 md:pr-2">
-                    <Image src={"/share.svg"} width={40} height={40} alt="image" className="md:mt-2 "   />
-                </div>
-                <h3 className=" xl:ml-6 mt-8 xl:text-xl xl:font-semibold  md:text-lg ml-2 md:mt-4">{heading}</h3>
-                <p className="xl:text-[1rem] xl:ml-6 xl:mt-4 md:text-[0.6rem] md:ml-2 md:mt-2"> A powerful dashboard for prescribing and monitoring patient therapy digitally</p>
-                <ul className="xl:mt-4 xl:ml-6 md:mt-4 md:ml-2">
-                    {ProductsListData.map((items,index)=>(<ListItems key={index} {...items}/>))}
-                </ul>
-                <div className="flex xl:gap-4 xl:ml-6 xl:mt-6 md:mt-6 md:ml-4 md:gap-4">
-                    <button className="w-fit-content xl:text-lg xl:px-8 xl:py-2 border border-[#005ab1] text-[#005ab1] rounded-lg md:px-2 md:py-1 md:text-xs">Learn More</button>
-                    <button className="w-fit-content xl:text-lg xl:px-8 xl:py-2 bg-[#005ab1] text-white rounded-lg md:px-2 md:text-xs">Explore Now</button>
-                </div>
-                <Image src={img} width={400} height={400} alt="image" className="xl:ml-6 xl:mt-12 md:hidden xl:block lg:block lg:mt-6"/>
-                <Image src={img} width={220} height={220} alt="image" className="lg:hidden md:ml-2 md:mt-16 "/>
-
-            </div>
+export const ProductsDoctorsSection = ({ img, heading }: ProductsDoctorsSectionProps) => {
+  return (
+    <div className="py-10 px-4 md:px-2 xl:px-4">
+      <div className="bg-white rounded-xl border-2 border-blue-100 p-4 flex flex-col">
+        {/* Share Icon */}
+        <div className="flex justify-end mb-4">
+          <Image src={"/share.svg"} width={40} height={40} alt="Share Icon" className="w-8 h-8 md:w-10 md:h-10" />
         </div>
-    )
+
+        {/* Heading */}
+        <h3 className="text-lg md:text-xl xl:text-2xl font-semibold mb-2 md:mb-4">{heading}</h3>
+
+        {/* Description */}
+        <p className="text-sm md:text-base xl:text-lg text-gray-700 mb-4">
+          A powerful dashboard for prescribing and monitoring patient therapy digitally
+        </p>
+
+        {/* Feature List */}
+        <ul className="mb-6 space-y-1">
+          {ProductsListData.map((items, index) => (
+            <ListItems key={index} {...items} />
+          ))}
+        </ul>
+
+        {/* Buttons */}
+        <div className="flex gap-4 flex-wrap mb-6">
+          <button className="text-sm md:text-base px-4 md:px-6 py-2 border border-[#005ab1] text-[#005ab1] rounded-lg">
+            Learn More
+          </button>
+          <button className="text-sm md:text-base px-4 md:px-6 py-2 bg-[#005ab1] text-white rounded-lg">
+            Explore Now
+          </button>
+        </div>
+
+        {/* Image */}
+        <div className="flex justify-center">
+          <Image
+            src={img}
+            width={400}
+            height={400}
+            alt="Product"
+            className="hidden md:block w-full max-w-xs sm:max-w-md lg:max-w-lg"
+          />
+          <Image
+            src={img}
+            width={220}
+            height={220}
+            alt="Product"
+            className="block md:hidden w-[80%] mx-auto"
+          />
+        </div>
+      </div>
+    </div>
+  )
 }

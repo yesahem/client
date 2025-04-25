@@ -172,7 +172,7 @@ export default function Home() {
             </form>
           </div>
         </div>
-        <hr className=" hidden h-1 border-none bg-gradient-to-r from-sky-400 to-cyan-200 w-[80%] px-12 ml-20 transform -translate-y-28 -translate-x-10 opacity-60 rounded-xlsm:block"/>
+        <hr className=" hidden h-0.5 border-none bg-gradient-to-r from-sky-400 to-cyan-200 w-[80%] px-12 ml-20 transform -translate-y-28 -translate-x-10 opacity-60 rounded-xlsm:block"/>
         </section>
         <Footer/>
     </>  
