@@ -13,8 +13,8 @@ export type OfferingSectionCardsProps = {
 
 export const OfferingSectionCards = ({image, imgh, imgw, styling, heading, description}: OfferingSectionCardsProps) => {
     return (
-        <div className="w-full sm:w-[85%] md:w-[70%] lg:w-[40%] h-auto bg-white rounded-xl my-4 flex justify-center items-center">
-            <div className="w-[99%] h-[99%] bg-gradient-to-b from-sky-400 to-cyan-200 rounded-xl flex justify-center items-center">
+        <div className="w-full h-full  sm:w-[85%] md:w-[70%] lg:w-[40%] h-auto bg-white rounded-xl my-4 flex justify-center items-center">
+            <div className="w-[99%] md:h-full bg-gradient-to-b from-sky-400 to-cyan-200 rounded-xl flex justify-center items-center">
                 <div className="w-[99%] h-[99%] bg-white rounded-xl p-4">
                     <div className="w-full flex justify-center">
                         <Image 
@@ -22,12 +22,12 @@ export const OfferingSectionCards = ({image, imgh, imgw, styling, heading, descr
                             width={imgw} 
                             height={imgh} 
                             alt={`${heading} image`} 
-                            className="w-auto h-auto object-contain max-h-40"
+                            className={styling}
                         />
                     </div>
-                    <h3 className="font-bold text-xl sm:text-xl md:text-xl lg:text-2xl mt-4">{heading}</h3>
-                    <p className="text-xs sm:text-sm mt-2">{description}</p>
-                    <button className="bg-[#005ab1] text-white p-2 rounded-lg mt-4 text-xs sm:text-sm hover:bg-[#004a8e] transition-colors">
+                    <h3 className="font-bold xl:text-2xl sm:text-xl md:text-lg lg:text-2xl mt-4">{heading}</h3>
+                    <p className="xl:text-sm     sm:text-sm mt-2 md:text-xs">{description}</p>
+                    <button className="bg-[#005ab1] text-white p-2 rounded-lg mt-2 text-xs md:mt-1 sm:text-sm hover:bg-[#004a8e] transition-colors">
                         EXPLORE OUR PRODUCTS
                     </button>
                 </div>    
